@@ -4,7 +4,6 @@ import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import Alert from './Components/Alert';
-
 import {
   Routes,
   Route,
@@ -46,7 +45,7 @@ function App() {
       <div className="container">
       <Routes>
           <Route exact path="/about" element={<About/>} />
-          <Route exact path="/" element={<TextForm  showAleart={showAleart} heading ="Enter Text to analyze below" mode={mode}/>}/>
+          <Route index path="/React_TextUtils_1" element={<TextForm  showAleart={showAleart} heading ="Enter Text to analyze below" mode={mode}/>}/>
       </Routes>
       </div> 
       </>
